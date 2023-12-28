@@ -1,0 +1,705 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Scrollbar Start's */
+::-webkit-scrollbar{
+    width: 15px;
+    height: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(rgb(126, 123, 123),rgb(97, 96, 96));
+  }
+  /* Scrollbar End's */
+
+  /* Navbar Start's */
+.nav-item{
+    font-weight: 600;
+    font-size: small;
+}
+.nav-item .nav-link{
+    color: #6e6c6c;
+    }
+.nav-item .nav-link:hover{
+color: #ffc61a;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: yellow;
+}
+.nav-item .nav-link>i:hover{
+    color: black;
+}
+  /* Navbar End's */
+
+  /* Slider Carousel Start's */
+  .bannerSlider{
+   max-height: 689px;
+    /* border: 3px solid green; */
+  }
+.carousel .carousel-inner .carousel-item >img{
+    height: 115vh;
+    width: 100%;
+}
+.carousel-item >img{
+    -webkit-animation: thing 20s;
+    -o-animation: thing 20s;
+    animation: thing 20s;
+}
+@keyframes thing{
+    from{
+        transform: scale(1,1);
+    }
+    to{
+        transform: scale(1.5 , 1.5);
+    }
+}
+/* Slider Crasuel End's */
+
+/* card Start"s */
+.card-form {
+    background-color: #f5f5f5;
+    position: relative;
+    width: 90%;
+    padding: 50px;
+    max-width: 500px;
+    margin: 40px auto;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+}
+
+.card-heading {
+    font-size: 25px;
+    font-weight: 650;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-heading span {
+    color: #ffc61a;
+    font-size: 25px;
+    font-weight: 650;
+
+}
+
+.card-images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-images img {
+    border-radius: 5px;
+    width: 85px;
+    height: 45px;
+    margin: 0 10px;
+    /* border: 2px solid black; */
+}
+
+
+.card-images>a>img:hover {
+    background-color: #ffba00;
+    color: #ffba00;
+}
+
+
+.form {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.form input {
+    padding: 12px 10px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.first-row,
+.seconed-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.get-taxi-btn {
+    width: 40%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #ffc61a;
+    border: none;
+    text-align: center;
+    /* Align text to center */
+    margin: 0 auto;
+    /* Center the button */
+    display: block;
+    /* Ensure it takes the full width available */
+}
+
+.get-taxi-btn:hover {
+    background-color: #000000;
+    color: #ffba00;
+}
+
+@media (max-width: 575.98px) {
+    /* Target mobile screens */
+    /* Your existing media queries... */
+
+    .get-taxi-btn {
+        width: 100%;
+        /* Make button width 100% for mobile */
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    /* Target mobile screens */
+    .form-container {
+        position: static;
+        top: auto;
+        left: auto;
+        margin-top: 20px;
+        /* Adjust margin-top for better alignment */
+    }
+
+    .first-row,
+    .seconed-row {
+        display: flex;
+        flex-direction: column;
+        /* Set form rows to column layout */
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .card-form {
+        width: 90%;
+        /* Adjust card width for better visibility */
+    }
+
+    .get-taxi-btn {
+        width: 100%;
+        /* Make button width 100% for mobile */
+    }
+}
+
+
+@media (min-width: 576px) {
+    .card-form {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-form {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-form {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-form {
+        width: 40%;
+    }
+}
+
+.form-container {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+@media (max-width: 575.98px) {
+
+    /* Target mobile screens */
+    .card-form {
+        width: 90%;
+        /* Adjust card width for better visibility */
+        margin: 20px auto;
+        /* Center the card on mobile screens */
+    }
+
+    .form-container {
+        position: static;
+        top: auto;
+        left: auto;
+        margin-top: 20px;
+        /* Adjust margin-top for better alignment */
+        padding: 20px;
+        /* Add padding for better spacing */
+    }
+
+    .first-row,
+    .seconed-row {
+        display: flex;
+        flex-direction: column;
+        /* Set form rows to column layout */
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .form input {
+        width: 100%;
+        /* Make input fields full width on mobile */
+    }
+
+    .get-taxi-btn {
+        width: 100%;
+        /* Make button width 100% for mobile */
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    /* Target mobile screens */
+    .card-images {
+        display: flex;
+        flex-wrap: wrap;
+        /* Allow images to wrap on smaller screens */
+        justify-content: center;
+        /* Center the images */
+        gap: 10px;
+        /* Add gap between images */
+        margin-bottom: 20px;
+        /* Adjust bottom margin */
+    }
+
+    .card-images img {
+        width: 100px;
+        /* Adjust image width for better visibility */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 5px;
+        /* Apply border radius */
+    }
+}
+/* Card End's */
+
+/* Our Partner and Contact Section Start's */
+.col-xl-3>a>button :hover{
+  background-color: black;
+  color: rgb(0, 255, 64);
+}
+/* Our Partner and Contact Section End's */
+
+/* Our Services Start's */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+/* Our Services End's */
+
+/* Download App Start's */
+#app {
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(/picture/download-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.apphead {
+    text-align: center;
+    /* border: 1px solid violet; */
+    margin-top: 50px;
+
+}
+
+.appcontent {
+    width: 100%;
+    height: 70%;
+    flex: 4 3 3;
+    /* border: 1px solid red; */
+
+}
+
+.appc {
+    /* border: 1px solid white; */
+    /* flex: 4; */
+    margin: 0 10px;
+}
+
+.appcc {
+    flex: 4;
+}
+
+.appmbl {
+    /* flex: 3; */
+    background-image: url(/picture/mobile.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+    padding-bottom: 20px;
+    /* border: 1px solid white; */
+
+}
+
+.appic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: flex-end;
+}
+
+.num {
+
+    flex: 1;
+    /* border: 1px solid red; */
+    align-self: flex-start;
+}
+
+.appc1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    justify-items: flex-start;
+}
+
+.appdata {
+    flex: 4;
+}
+
+.num h2 {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.appc2 {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 10px;
+
+
+}
+
+.num h2 {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.appdata1 {
+    flex: 4;
+    /* border: 1px solid rebeccapurple; */
+}
+
+@media only screen and (max-width: 1093px) {
+    .appcontent {
+        width: 80%;
+        height: 70%;
+        flex: 4 3 4;
+        /* border: 1px solid red; */
+
+    }
+
+    .num {
+        display: none;
+    }
+
+    .appdata {
+        text-align: center;
+    }
+
+    .appdata1 {
+        text-align: center;
+    }
+
+    .appmbl {
+        /* flex: 1; */
+        /* border: 1px solid white; */
+        background-image: none;
+        height: 50%;
+
+        align-items: center;
+        justify-content: space-around;
+        gap: 0px;
+        padding-bottom: 0px;
+    }
+
+    .appic {
+        /* border: 1px solid red; */
+        height: 400px;
+        background-color: rgb(255, 208, 0);
+        width: 70%;
+        padding: 20px 20px;
+        justify-content: space-around;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #app {
+        height: 130vh;
+
+    }
+
+    .appcontent {
+        width: 90%;
+    }
+
+    .appic {
+        height: 100px;
+        width: 70%;
+        padding: 20px 20px;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #app {
+        height: 180vh;
+        justify-content: space-evenly;
+        gap: 0;
+
+    }
+
+    .appic {
+        height: 200px;
+        width: 40%;
+        padding: 20px 20px;
+    }
+
+    .apphead {
+        /* border: 1px solid red; */
+        margin-top: 0px;
+
+    }
+
+    .appcontent {
+        width: 80%;
+        height: 600px;
+
+        /* border: 1px solid red; */
+
+    }
+
+    .appc {
+        /* border: 1px solid white; */
+        /* flex: 4; */
+        height: 200px;
+        margin: 0 0px;
+        padding: 0;
+
+    }
+
+    .appcc {
+        height: auto;
+    }
+
+}
+
+/* Download App Start's */
+
+
+/* For Driver  Start's */
+/* Custom CSS if needed */
+.drive {
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 30px;
+}
+
+.tick {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.tick h5 {
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.check-icon {
+    display: inline-block;
+    width: 30px;
+    /* Adjust width as needed */
+}
+
+.become-driver {
+    background-color: #ffba00;
+    color: #000000;
+    border: 1px solid #ffba00;
+    border-radius: 50px;
+    height: 50px;
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 35px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.become-driver:hover {
+    background-color: #000000;
+    color: #ffba00;
+}
+
+/* Responsive For Drivers Start's */
+@media (max-width: 768px) {
+    .tick {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .become-driver {
+        width: 100%;
+        max-width: 220px;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 100px;
+    }
+}
+/* Responsive For Drivers Start's */
+/* For Driver's End */
+
+/* Testimonial Start's  */
+.one{
+    /* border: 4px solid red; */
+    height: 15px;
+    width: 100%;
+  background-image: repeating-conic-gradient(white 0deg,white 90deg,#6b6868 91deg,#636161 180deg);
+  background-size: 1% 100%;
+  margin-top: 55px;
+  }
+/* Testimonial End's */
+
+/* <!-- Our Client's Start's --> */
+
+.custom-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffba00;
+    padding: 20px;
+}
+
+/* Make images responsive */
+.col-6 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Center text content for small screens */
+@media (max-width: 776px) {
+    .col-12.col-md-4 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .row-partner-client {
+        margin-top: 20px;
+    }
+}
+
+/* <!-- Our Clients End's --> */
+
+
+/* css code for footer explore section start */
+.menu-footer-menu-ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-footer-menu-li:hover {
+    color: #ffba00;
+}
+
+.menu-footer-menu-li {
+    padding-bottom: 10px;
+    /* Adjust spacing as needed */
+    margin-bottom: 5px;
+    /* Add margin between li items */
+    border-bottom: 1px dotted gray;
+    /* Dotted bottom border */
+    cursor: pointer;
+}
+
+.heading-color {
+    color: #ffba00;
+}
+
+#block-footer {
+    background-color: #2e2e2e;
+    color: #CCCCCC;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #0c0c0c;
+    text-align: left;
+    padding: 37px 0 27px;
+    overflow: hidden;
+}
+
+/* css code for footer explore section end */
+
+
+/* bottom Footer Block start */
+footer {
+    background-color: #494949;
+    text-align: left;
+    padding: 37px 0 27px;
+    overflow: hidden;
+}
+
+.footer-text {
+    text-decoration: none;
+    color: #ffba00;
+}
+
+.footer-text:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* bottom Footer Block end */
